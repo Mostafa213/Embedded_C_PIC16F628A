@@ -1,0 +1,51 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"15 C:\Projects\Embedded\PIC16\interrupt.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"34
+[v _ISR ISR `II(v  1 e 1 0 ]
+"445 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f628a.h
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"1422
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1443
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"1482
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"1554
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"1557
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"1575
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"1578
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"1581
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"1584
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"1632
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"13 C:\Projects\Embedded\PIC16\interrupt.X\main.c
+[v _counter counter `uc  1 e 1 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"31
+} 0
+"34
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"44
+} 0

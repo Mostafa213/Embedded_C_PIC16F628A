@@ -1,0 +1,291 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\sevenSegment.X.production.o
+cinit CODE 0 7EA 7EA 16 2
+text1 CODE 0 787 787 63 2
+maintext CODE 0 73A 73A 4D 2
+cstackCOMMON COMMON 1 70 70 B 1
+cstackBANK0 BANK0 1 20 20 B 1
+idataBANK0 CODE 0 730 730 A 2
+dataBANK0 BANK0 1 2B 2B A 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 35-6F 1
+RAM A0-EF 1
+RAM 120-14F 1
+BANK0 35-6F 1
+BANK1 A0-EF 1
+BANK2 120-14F 1
+CONST 1-72F 2
+ENTRY 1-72F 2
+IDLOC 2000-2003 2
+STACK A0-EF 1
+CODE 1-72F 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-1EF 1
+COMMON 7B-7D 1
+EEDATA 2100-217F 2
+STRCODE 1-72F 2
+STRING 1-72F 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\sevenSegment.X.production.o
+7EA cinit CODE >281:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EA cinit CODE >284:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EA cinit CODE >298:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EB cinit CODE >299:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EC cinit CODE >300:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7ED cinit CODE >301:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EE cinit CODE >302:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7EF cinit CODE >303:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F0 cinit CODE >304:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F1 cinit CODE >305:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F2 cinit CODE >306:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F3 cinit CODE >307:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F4 cinit CODE >308:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F5 cinit CODE >309:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F6 cinit CODE >310:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F7 cinit CODE >311:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F8 cinit CODE >312:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7F9 cinit CODE >313:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FA cinit CODE >314:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FB cinit CODE >315:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FC cinit CODE >316:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FD cinit CODE >317:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FE cinit CODE >323:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FE cinit CODE >325:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+7FF cinit CODE >326:C:\Users\Mostafa\AppData\Local\Temp\sirs.
+787 text1 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+787 text1 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+788 text1 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+78C text1 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+791 text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+794 text1 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+794 text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+798 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+79E text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7A4 text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7A6 text1 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7A7 text1 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7AE text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7B3 text1 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7B3 text1 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7B9 text1 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7B9 text1 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7C3 text1 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7CA text1 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7D1 text1 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7D9 text1 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7D9 text1 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7DE text1 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7E4 text1 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+7E9 text1 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+73A maintext CODE >13:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+73A maintext CODE >15:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+752 maintext CODE >16:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+755 maintext CODE >17:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+759 maintext CODE >18:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+759 maintext CODE >19:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+765 maintext CODE >20:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+777 maintext CODE >21:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+785 maintext CODE >22:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+786 maintext CODE >24:C:\Projects\Embedded\PIC16\sevenSegment.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+main@segment 20 0 BANK0 1 cstackBANK0 dist/default/production\sevenSegment.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+_main E74 0 CODE 0 maintext dist/default/production\sevenSegment.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+start 0 0 CODE 0 init C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+wtemp0 7E 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___awmod FD4 0 CODE 0 text1 dist/default/production\sevenSegment.X.production.o
+main@counter 2A 0 BANK0 1 cstackBANK0 dist/default/production\sevenSegment.X.production.o
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+start_initialization FD4 0 CODE 0 cinit dist/default/production\sevenSegment.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\sevenSegment.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lcinit FD4 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 2008 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+__pdataBANK0 2B 0 BANK0 1 dataBANK0 dist/default/production\sevenSegment.X.production.o
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+___awmod F0E 0 CODE 0 text1 dist/default/production\sevenSegment.X.production.o
+__pmaintext E74 0 CODE 0 maintext dist/default/production\sevenSegment.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+main@F470 2B 0 BANK0 1 dataBANK0 dist/default/production\sevenSegment.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+stacklo 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\sirs.o
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production\sevenSegment.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+__ptext1 F0E 0 CODE 0 text1 dist/default/production\sevenSegment.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$XT 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production\sevenSegment.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 E60 0 CODE 0 idataBANK0 dist/default/production\sevenSegment.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\sevenSegment.X.production.o
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_main F0E 0 CODE 0 maintext dist/default/production\sevenSegment.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\sevenSegment.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FD4 0 CODE 0 cinit dist/default/production\sevenSegment.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EA FD4 16 2
+text1 0 787 F0E 63 2
+maintext 0 73A E74 4D 2
+cstackCOMMON 1 70 70 B 1
+cstackBANK0 1 20 20 15 1
+reset_vec 0 0 0 1 2
+idataBANK0 0 730 E60 A 2
+config 0 2007 400E 1 2
