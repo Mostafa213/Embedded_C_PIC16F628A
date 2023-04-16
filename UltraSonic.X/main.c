@@ -54,7 +54,7 @@ void main(void) {
 
 float calculate_distance(){
     TMR1=0;
-    __delay_us(10);
+    //__delay_us(10);
     RB4=1;
     __delay_us(10);
     RB4=0;
