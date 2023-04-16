@@ -57,7 +57,7 @@ float calculate_distance(){
     __delay_us(10);
     RB4=1;
     __delay_us(10);
-    RB0=0;
+    RB4=0;
     while(!RB5);
     TMR1ON=1;
     while(RB5);
