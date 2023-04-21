@@ -1,0 +1,74 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"14 C:\Projects\Embedded\PIC16\CCP_Comparing.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"40
+[v _ISR ISR `II(v  1 e 1 0 ]
+"445 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f628a.h
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"603
+[v _CCPR1 CCPR1 `VEus  1 e 2 @21 ]
+"1362
+[v _CCP1IE CCP1IE `VEb  1 e 0 @1122 ]
+"1365
+[v _CCP1IF CCP1IF `VEb  1 e 0 @98 ]
+"1368
+[v _CCP1M0 CCP1M0 `VEb  1 e 0 @184 ]
+"1371
+[v _CCP1M1 CCP1M1 `VEb  1 e 0 @185 ]
+"1374
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"1377
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"1422
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1443
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"1500
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"1554
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"1557
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"1575
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"1584
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"1650
+[v _TRISB6 TRISB6 `VEb  1 e 0 @1078 ]
+"13 C:\Projects\Embedded\PIC16\CCP_Comparing.X\main.c
+[v _counter counter `uc  1 e 1 0 ]
+"14
+[v _main main `(v  1 e 1 0 ]
+{
+"38
+} 0
+"40
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"46
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
