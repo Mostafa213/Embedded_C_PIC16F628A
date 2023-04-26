@@ -1006,6 +1006,141 @@ extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
 # 9 "main.c" 2
 
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 1 3
+# 13 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int8_t;
+
+
+
+
+
+
+typedef signed int int16_t;
+
+
+
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+
+
+
+typedef signed long int int32_t;
+# 52 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint8_t;
+
+
+
+
+
+typedef unsigned int uint16_t;
+
+
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+
+
+typedef unsigned long int uint32_t;
+# 88 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int_least8_t;
+
+
+
+
+
+
+
+typedef signed int int_least16_t;
+# 109 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef __int24 int_least24_t;
+# 118 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef signed long int int_least32_t;
+# 136 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint_least8_t;
+
+
+
+
+
+
+typedef unsigned int uint_least16_t;
+# 154 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef __uint24 uint_least24_t;
+
+
+
+
+
+
+
+typedef unsigned long int uint_least32_t;
+# 181 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef signed char int_fast8_t;
+
+
+
+
+
+
+typedef signed int int_fast16_t;
+# 200 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef __int24 int_fast24_t;
+
+
+
+
+
+
+
+typedef signed long int int_fast32_t;
+# 224 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned char uint_fast8_t;
+
+
+
+
+
+typedef unsigned int uint_fast16_t;
+# 240 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef __uint24 uint_fast24_t;
+
+
+
+
+
+
+typedef unsigned long int uint_fast32_t;
+# 268 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef int32_t intmax_t;
+# 282 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\c90\\stdint.h" 3
+typedef uint32_t uintmax_t;
+
+
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 10 "main.c" 2
+
 # 1 "./config.h" 1
 # 85 "./config.h"
 #pragma config FOSC = INTOSCIO
@@ -1016,20 +1151,66 @@ extern __bank0 __bit __timeout;
 #pragma config LVP = OFF
 #pragma config CPD = OFF
 #pragma config CP = OFF
-# 10 "main.c" 2
+# 11 "main.c" 2
 
 
+
+
+
+
+void TX_RX_Init();
+void UART_Write(uint8_t);
+uint8_t Data = 0;
 
 void main(void) {
-    TRISA&=0b11001111;
+    TX_RX_Init();
+    TRISA&=0b00000000;
     PORTA=0x00;
+    TRISB|=0b00011001;
     while(1){
-        RA4=1;
-        RA5=1;
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
-        RA4=0;
-        RA5=0;
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
+        if(RB0){
+            Data++;
+            _delay((unsigned long)((250)*(4000000/4000.0)));
+        }
+        if(RB3){
+            Data--;
+            _delay((unsigned long)((250)*(4000000/4000.0)));
+        }
+
+
+
+        if(RB4){
+            UART_Write(Data);
+            _delay((unsigned long)((250)*(4000000/4000.0)));
+        }
+        PORTA = Data;
     }
     return;
+}
+
+void __attribute__((picinterrupt(""))) ISR(void){
+    if (RCIF){
+        Data=RCREG;
+        RCIF = 0;
+    }
+}
+
+
+void TX_RX_Init(){
+    BRGH = 1;
+    SPBRG = 25;
+    SYNC = 0;
+    SPEN = 1;
+    TRISB1=1;
+    TRISB2=1;
+    TXEN=1;
+    RCIE=1;
+    PEIE=1;
+    GIE=1;
+    CREN=1;
+}
+
+void UART_Write(uint8_t data){
+    while(!TRMT);
+    TXREG = data;
 }

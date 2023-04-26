@@ -41,7 +41,7 @@ void RX_Reciver_Init(){
 }
 
 void __interrupt() ISR(void){
-    if (RCIF == 1){
+    if (RCIF){
         PORTA=RCREG;    // Read The Received Data Buffer
         RCIF = 0;
     }

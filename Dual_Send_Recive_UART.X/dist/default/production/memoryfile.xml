@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\test_RA4_5.X.production.hex">
+  <executable name="dist/default/production\Dual_Send_Recive_UART.X.production.hex">
     <memory name="program">
       <units>words</units>
       <length>2048</length>
-      <used>49</used>
-      <free>1999</free>
+      <used>152</used>
+      <free>1896</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>224</length>
-      <used>5</used>
-      <free>219</free>
+      <used>10</used>
+      <free>214</free>
     </memory>
   </executable>
 </project>

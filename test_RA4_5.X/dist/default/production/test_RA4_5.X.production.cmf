@@ -11,12 +11,12 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
+$C:\Users\Mostafa\AppData\Local\Temp\s55k.o
 end_init CODE 0 0 0 1 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\test_RA4_5.X.production.o
 cinit CODE 0 7FE 7FE 2 2
-maintext CODE 0 7CE 7CE 30 2
+maintext CODE 0 7CF 7CF 2F 2
 cstackCOMMON COMMON 1 70 70 3 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -30,19 +30,19 @@ RAM 120-14F 1
 BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 120-14F 1
-CONST 1-7CD 2
-ENTRY 1-7CD 2
+CONST 1-7CE 2
+ENTRY 1-7CE 2
 IDLOC 2000-2003 2
 STACK 20-6F 1
-CODE 1-7CD 2
+CODE 1-7CE 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
 SFR3 180-1EF 1
 COMMON 73-7D 1
 EEDATA 2100-217F 2
-STRCODE 1-7CD 2
-STRING 1-7CD 2
+STRCODE 1-7CE 2
+STRING 1-7CE 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -57,14 +57,14 @@ STRING 1-7CD 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\test_RA4_5.X.production.o
-7FE cinit CODE >266:C:\Users\Mostafa\AppData\Local\Temp\s7d0.
-7FE cinit CODE >269:C:\Users\Mostafa\AppData\Local\Temp\s7d0.
-7FE cinit CODE >275:C:\Users\Mostafa\AppData\Local\Temp\s7d0.
-7FE cinit CODE >277:C:\Users\Mostafa\AppData\Local\Temp\s7d0.
-7FF cinit CODE >278:C:\Users\Mostafa\AppData\Local\Temp\s7d0.
-7CE maintext CODE >13:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
-7CE maintext CODE >14:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
-7D4 maintext CODE >15:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
+7FE cinit CODE >266:C:\Users\Mostafa\AppData\Local\Temp\s55k.
+7FE cinit CODE >269:C:\Users\Mostafa\AppData\Local\Temp\s55k.
+7FE cinit CODE >275:C:\Users\Mostafa\AppData\Local\Temp\s55k.
+7FE cinit CODE >277:C:\Users\Mostafa\AppData\Local\Temp\s55k.
+7FF cinit CODE >278:C:\Users\Mostafa\AppData\Local\Temp\s55k.
+7CF maintext CODE >13:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
+7CF maintext CODE >14:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
+7D5 maintext CODE >15:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
 7D9 maintext CODE >16:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
 7D9 maintext CODE >17:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
 7DC maintext CODE >18:C:\Projects\Embedded\PIC16\test_RA4_5.X\main.c
@@ -93,19 +93,19 @@ __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-_main F9C 0 CODE 0 maintext dist/default/production\test_RA4_5.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+_main F9E 0 CODE 0 maintext dist/default/production\test_RA4_5.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
-start 0 0 CODE 0 init C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
+start 0 0 CODE 0 init C:\Users\Mostafa\AppData\Local\Temp\s55k.o
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Mostafa\AppData\Local\Temp\s55k.o
 wtemp0 7E 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -113,7 +113,7 @@ __Lmaintext 0 0 ABS 0 maintext -
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 start_initialization FFC 0 CODE 0 cinit dist/default/production\test_RA4_5.X.production.o
 __CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
+___int_sp 0 0 STACK 2 stack C:\Users\Mostafa\AppData\Local\Temp\s55k.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -155,14 +155,14 @@ __S1 73 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-__pmaintext F9C 0 CODE 0 maintext dist/default/production\test_RA4_5.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+__pmaintext F9E 0 CODE 0 maintext dist/default/production\test_RA4_5.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
-stacklo 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\s7d0.o
+stackhi 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\s55k.o
+stacklo 0 0 ABS 0 - C:\Users\Mostafa\AppData\Local\Temp\s55k.o
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -216,7 +216,7 @@ __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\test_RA4_5.X.production.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FE FFC 2 2
-maintext 0 7CE F9C 30 2
+maintext 0 7CF F9E 2F 2
 cstackCOMMON 1 70 70 3 1
 reset_vec 0 0 0 1 2
 config 0 2007 400E 1 2
